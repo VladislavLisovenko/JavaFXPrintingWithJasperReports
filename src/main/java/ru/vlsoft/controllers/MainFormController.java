@@ -117,6 +117,7 @@ public class MainFormController {
         JasperPrint jasperPrint = JasperFillManager.fillReport("report.jasper", parameters, dataSource);
 
         //export report to html
+        //you can use another Exporter to export into different format
         HtmlExporter exporter = new HtmlExporter();
         exporter.setExporterInput(new SimpleExporterInput(jasperPrint));
         exporter.setExporterOutput(new SimpleHtmlExporterOutput("report.html"));
