@@ -20,7 +20,7 @@ public class MainClass extends Application {
             Parent root = FXMLLoader.load(resource);
             Scene scene = new Scene(root, 840, 480);
             stage.setScene(scene);
-            stage.setTitle("JavaFX Selection Master");
+            stage.setTitle("JavaFX: Printing with JasperReports");
             stage.onCloseRequestProperty().setValue(e -> Platform.exit());
             stage.show();
 
